@@ -1,0 +1,26 @@
+# 路径配置
+paths:
+  # 主文件夹配置
+  main_folders:
+    - folder_type: type1
+      path: path/to/main1
+    - folder_type: type2
+      path: path/to/main2
+
+  # 子文件夹配置
+  sub_folders:
+    - data_type: data1
+      folder_type: type1
+      folder_name: subfolder1
+      MPON: 1
+      RON: 0
+    - data_type: data2
+      folder_type: type2
+      folder_name: subfolder2
+      MPON: 0
+      RON: 1
+
+# 全局设置
+settings:
+  levels_up: 2  # 向上查找层数
+  config_folder_name: "config"  # 配置文件夹名称 
