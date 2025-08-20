@@ -1,0 +1,202 @@
+{
+    "components": {
+        "data_source": {
+            "mode": "sql"
+        },
+        "database": {
+            "database1": {
+                "host": "rm-bp1o6we7s3o1h76x1to.mysql.rds.aliyuncs.com",
+                "port": 3306,
+                "user": "wc",
+                "password": "Abcd1234#",
+                "charset": "utf8mb4"
+            }
+        }
+    },
+    "main_folder": [
+        {
+            "folder_type": "input_folder",
+            "path": "OneDrive\\Data_prepared\\data_timeSeries",
+            "disk": "D:"
+        },
+        {
+            "folder_type": "output_folder",
+            "path": "Signal",
+            "disk": "D"
+        },
+        {
+            "folder_type": "output_folder_1",
+            "path": "Signal\\signal_data",
+            "disk": "D"
+        },
+        {
+            "folder_type": "output_folder_2",
+            "path": "Signal\\final_signal",
+            "disk": "D"
+        },
+        {
+            "folder_type": "portfolio_output",
+            "path": "Portfolio_test",
+            "disk": "D"
+        },
+        {
+            "folder_type": "config_folder",
+            "path": "TimeSelecting\\config_project",
+            "disk": "D"
+        }
+    ],
+    "sub_folder": [
+        {
+            "data_type": "raw_Shibor",
+            "folder_name": "macro_data\\Shibor.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_Bond",
+            "folder_name": "macro_data\\ChinaGovernmentBonds.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_ZZGK",
+            "folder_name": "macro_data\\ChinaDevelopmentBankBonds.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_ZZZD",
+            "folder_name": "macro_data\\ChinaMediumTermNotes.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_M1M2",
+            "folder_name": "macro_data\\M1M2.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_CPI",
+            "folder_name": "macro_data\\CPI.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_PPI",
+            "folder_name": "macro_data\\PPI.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_PMI",
+            "folder_name": "macro_data\\PMI.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_macro"
+        },
+        {
+            "data_type": "raw_USDX",
+            "folder_name": "us_data\\UsDollar.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_us"
+        },
+        {
+            "data_type": "raw_indexFactor",
+            "folder_name": "index_data\\ygData.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_indexother"
+        },
+        {
+            "data_type": "raw_NLBPDifference",
+            "folder_name": "mkt_data\\NetLeverageBuying.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_indexother"
+        },
+        {
+            "data_type": "raw_LargeOrder",
+            "folder_name": "mkt_data\\LargeOrderInflow.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_indexother"
+        },
+        {
+            "data_type": "raw_LHBProportion",
+            "folder_name": "mkt_data\\LHB_AMT_proportion.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_lhb"
+        },
+        {
+            "data_type": "raw_futureDifference",
+            "folder_name": "index_data\\indexFutureDifference.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_indexother"
+        },
+        {
+            "data_type": "raw_rrscoreDifference",
+            "folder_name": "index_data\\indexrrScoreDifference.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_indexother"
+        },
+        {
+            "data_type": "raw_vix",
+            "folder_name": "vix_data\\vix_timeWeight.csv",
+            "folder_type": "input_folder",
+            "database": "data_prepared_new",
+            "sql_sheet": "data_vix"
+        },
+        {
+            "data_type": "signal_booster_output",
+            "folder_name": "signal_boost",
+            "folder_type": "output_folder"
+        },
+        {
+            "data_type": "signal_data",
+            "folder_name": "signal_data",
+            "folder_type": "output_folder"
+        },
+        {
+            "data_type": "Combine_signal",
+            "folder_name": "Combine_processing",
+            "folder_type": "output_folder_2"
+        },
+        {
+            "data_type": "signal_parameters_prod",
+            "folder_name": "signal_dictionary.xlsx",
+            "folder_type": "config_project"
+        },
+        {
+            "data_type": "signal_parameters_history",
+            "folder_name": "signal_history_config.xlsx",
+            "folder_type": "config_project"
+        },
+        {
+            "data_type": "backtest_output",
+            "folder_name": "signal_output",
+            "folder_type": "output_folder"
+        },
+        {
+            "data_type": "portfolio_output",
+            "folder_name": "portfolio_weight",
+            "folder_type": "portfolio_output"
+        },
+        {
+            "data_type": "signal_combine",
+            "folder_name": "signal_combine",
+            "folder_type": "output_folder"
+        }
+    ]
+}
